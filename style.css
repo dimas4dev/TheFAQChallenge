@@ -63,4 +63,29 @@ body {
   margin: 0;
 }
 
+@media screen and (min-width: 700px) {
+  .main__article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 50px 50px 100px;
+  }
+  .main__article .container__text {
+    top: 0;
+  }
+  .main__article .container__text .title {
+    text-align: left;
+  }
+  .main__article img {
+    cursor: pointer;
+  }
+  .main__article .container__image {
+    justify-content: flex-start;
+  }
+  .main__article .container__image img {
+    top: 0;
+    width: 80%;
+    left: -20%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
