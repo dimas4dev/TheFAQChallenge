@@ -87,3 +87,31 @@ body {
   padding: 10px;
   margin: 0;
 }
+@media screen and (min-width: 700px) {
+  .main {
+    &__article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 50px 50px 50px 100px;
+
+      .container__text {
+        top: 0;
+        .title {
+          text-align: left;
+        }
+      }
+      img {
+        cursor: pointer;
+      }
+      .container__image {
+        justify-content: flex-start;
+
+        img {
+          top: 0;
+          width: 80%;
+          left: -20%;
+        }
+      }
+    }
+  }
+}
